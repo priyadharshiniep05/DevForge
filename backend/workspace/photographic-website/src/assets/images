@@ -1,0 +1,47 @@
+// src/assets/images/index.js
+
+export const heroImages = [
+  {
+    id: 'hero-1',
+    src: '/assets/hero/hero-image-1.jpg',
+    alt: 'Hero Image 1',
+  },
+  {
+    id: 'hero-2',
+    src: '/assets/hero/hero-image-2.jpg',
+    alt: 'Hero Image 2',
+  },
+  {
+    id: 'hero-3',
+    src: '/assets/hero/hero-image-3.jpg',
+    alt: 'Hero Image 3',
+  },
+];
+
+export const galleryImages = [
+  {
+    id: 'gallery-1',
+    src: '/assets/gallery/photo-1.jpg',
+    alt: 'Gallery Photo 1',
+  },
+  {
+    id: 'gallery-2',
+    src: '/assets/gallery/photo-2.jpg',
+    alt: 'Gallery Photo 2',
+  },
+  {
+    id: 'gallery-3',
+    src: '/assets/gallery/photo-3.jpg',
+    alt: 'Gallery Photo 3',
+  },
+  {
+    id: 'gallery-4',
+    src: '/assets/gallery/photo-4.jpg',
+    alt: 'Gallery Photo 4',
+  },
+  {
+    id: 'gallery-5',
+    src: '/assets/gallery/photo-5.jpg',
+    alt: 'Gallery Photo 5',
+  },
+];

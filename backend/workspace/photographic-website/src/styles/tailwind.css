@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Tailwind CSS configuration */
+
+/* Theme customization */
+@layer base {
+  :root {
+    --primary-color: #3490dc;
+    --secondary-color: #ffed4a;
+    --accent-color: #f6ad55;
+    --background-color: #ffffff;
+    --text-color: #333333;
+    --dark-background-color: #1a202c;
+    --dark-text-color: #e2e8f0;
+  }
+
+  body {
+    @apply bg-background-color text-text-color dark:bg-dark-background-color dark:text-dark-text-color;
+  }
+}
+
+/* Variants customization */
+@layer components {
+  .btn-primary {
+    @apply bg-primary-color text-white hover:bg-opacity-90 transition duration-300 ease-in-out;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary-color text-black hover:bg-opacity-90 transition duration-300 ease-in-out;
+  }
+
+  .btn-accent {
+    @apply bg-accent-color text-white hover:bg-opacity-90 transition duration-300 ease-in-out;
+  }
+
+  .card {
+    @apply bg-white shadow-md rounded-lg overflow-hidden dark:bg-dark-background-color;
+  }
+
+  .card-header {
+    @apply p-4 bg-primary-color text-white font-bold text-xl;
+  }
+
+  .card-body {
+    @apply p-6;
+  }
+
+  .card-footer {
+    @apply p-4 bg-gray-100 flex justify-between items-center dark:bg-dark-background-color;
+  }
+}
+
+/* Utility classes for layout and spacing */
+@layer utilities {
+  .container {
+    @apply max-w-screen-lg mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-title {
+    @apply text-3xl font-bold mb-6 text-center;
+  }
+
+  .section-subtitle {
+    @apply text-xl text-gray-600 mb-12 text-center dark:text-gray-400;
+  }
+}

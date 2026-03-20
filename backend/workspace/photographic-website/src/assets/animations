@@ -1,0 +1,47 @@
+// src/assets/animations/index.js
+
+import { motion } from 'framer-motion';
+
+/**
+ * Animation variants for smooth transitions.
+ */
+export const fadeIn = {
+  hidden: { opacity: 0 },
+  visible: { opacity: 1, transition: { duration: 0.5 } },
+};
+
+export const slideInLeft = {
+  hidden: { x: '-100%', opacity: 0 },
+  visible: { x: '0', opacity: 1, transition: { duration: 0.7 } },
+};
+
+export const slideInRight = {
+  hidden: { x: '100%', opacity: 0 },
+  visible: { x: '0', opacity: 1, transition: { duration: 0.7 } },
+};
+
+export const staggerChildren = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.2,
+      delayChildren: 0.5,
+    },
+  },
+};
+
+/**
+ * Motion component with fade-in animation.
+ */
+export const FadeInMotion = motion.div;
+
+/**
+ * Motion component with slide-in from left animation.
+ */
+export const SlideInLeftMotion = motion.div;
+
+/**
+ * Motion component with slide-in from right animation.
+ */
+export const SlideInRightMotion = motion.div;

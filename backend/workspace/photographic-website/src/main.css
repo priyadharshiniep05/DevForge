@@ -1,0 +1,85 @@
+/* src/main.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global styles for the application */
+body {
+  @apply font-sans bg-white text-black antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-bold;
+}
+
+p {
+  @apply leading-relaxed;
+}
+
+a {
+  @apply text-blue-500 hover:text-blue-700 transition-colors duration-300;
+}
+
+.container {
+  @apply max-w-screen-lg mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+/* Responsive design */
+@media (min-width: 640px) {
+  .container {
+    @apply max-w-screen-md;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    @apply max-w-screen-lg;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    @apply max-w-screen-xl;
+  }
+}
+
+/* Utility classes for layout */
+.flex-center {
+  @apply flex items-center justify-center;
+}
+
+.flex-between {
+  @apply flex items-center justify-between;
+}
+
+/* Custom styles for specific components */
+.hero-section {
+  @apply min-h-screen bg-cover bg-center text-white py-16;
+}
+
+.photo-gallery {
+  @apply grid gap-4 md:grid-cols-2 lg:grid-cols-3;
+}
+
+.scroll-animations {
+  @apply opacity-0 transform translate-y-10 transition-opacity duration-500 ease-in-out;
+}
+
+.portfolio-section {
+  @apply py-16 bg-gray-100;
+}
+
+.lightbox {
+  @apply fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50;
+}
+
+/* Additional utility classes */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
